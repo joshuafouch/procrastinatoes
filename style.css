@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+search {
+    text-align: center;
+}
+
+.task-input {
+
+}
+
+.asks-list {
+
+}
+
+.add-task {
+
+}
+
+li {
+
+}
+
+.del-btn {
+
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}

@@ -7,12 +7,14 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      nodeIntegration: true, // allows the use of node.js modules in the renderer process
     }
   })
 
   win.loadFile('index.html')
 }
+
+app.disableHardwareAcceleration()
 
 // starts the app and creates a new browser window
 app.whenReady().then(() => {
