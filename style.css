@@ -1,40 +1,46 @@
 * {
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 body, html {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #4F646F, #535657, #DEE7E7);
+    margin: 0;
+    min-height: 100vh;
 }
 
 h1 {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 search {
     text-align: center;
 }
 
-.task-input {
+#task-input {
 
 }
 
-.asks-list {
+#add-task {
 
 }
 
-.add-task {
+#tasks-list {
 
 }
 
 li {
-
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.del-btn {
+.done-btn {
 
 }
-
-
 
 footer {
     position: fixed;
