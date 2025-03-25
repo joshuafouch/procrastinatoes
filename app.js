@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('tasks-list');
     const addBtn = document.getElementById('add-task');
-    const doneSound = new Audio('./assets/goodjob.mp3');
 
     // function when something is inputted
     const addTask = () => {
@@ -66,8 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.target.textContent = '✓';
             } else {
                 // if task is not done, and user presses done, cross it out and change done button to redo icon
-                doneSound.currentTime = 0;
-                doneSound.play();
                 textP.style.textDecoration = 'line-through';
                 event.target.textContent = '↺';
             }
