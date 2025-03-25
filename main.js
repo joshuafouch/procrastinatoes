@@ -8,7 +8,8 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       nodeIntegration: true, // allows the use of node.js modules in the renderer process
-    }
+    },
+    autoHideMenuBar: true, // hides the menu bar
   })
 
   win.loadFile('index.html')
